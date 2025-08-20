@@ -1,16 +1,35 @@
 ---
-layout: home
-title: "Welcome to Patchform"
+layout: default
+title: Patchform
 ---
 
-<div style="display:flex; gap:12px; justify-content:center; margin:2rem 0;">
-  <a href="https://discord.gg/YOUR_INVITE">
-    <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
-  </a>
-  <a href="https://github.com/Patchform">
-    <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white">
-  </a>
-</div>
+<section class="hero">
+  <div class="hero-overlay">
+    <h1>Patchform</h1>
+    <p>Next-gen modular audio/visual environment</p>
+    <div class="buttons">
+      <a href="https://discord.gg/FgMyB9KU9H">
+        <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
+      </a>
+      <a href="https://www.patreon.com/alexmitchellmus">
+        <img src="https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white">
+      </a>
+    </div>
+  </div>
+</section>
 
-# Patchform  
-A next-generation modular audio/visual environment.
+<section class="about-objects">
+  <div class="content">
+    <div class="text">
+      <p>Build with modular nodes and connect them visually.</p>
+    </div>
+    <div class="image">
+      <img src="assets/img/objects.png" alt="Objects screenshot">
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <h2>Comming 2026</h2>
+  <p>Patchform is currently in heavy developement, join my Patreon, or Discord channel for updates…</p>
+</section>

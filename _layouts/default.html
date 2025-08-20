@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html, body { margin:0; padding:0; height:100%; scroll-behavior:smooth; }
+        body {
+        font-family:sans-serif;
+        background: #111;
+        color:#fff;
+        }
+
+        header {
+            position:fixed; top:0; left:0; right:0; height:60px;
+            background: rgba(0,0,0,0.4);
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:0 1rem;
+            z-index:10;
+        }
+        nav {
+            position: fixed;
+            top: 60px;
+            right: 0;
+            background: #111;
+            display: none;
+            flex-direction: column;
+            z-index: 9;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            border-radius: 0 0 8px 0;
+            min-width: 150px;
+        }
+        nav a {
+            color: #fff;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            border-bottom: 1px solid #333;
+            transition: background 0.2s ease;
+            white-space: nowrap;
+        }
+        nav a:hover {
+            background: #222;
+        }
+        nav a:last-child {
+            border-bottom: none;
+        }
+        #menu-toggle:checked + nav { display: flex; }
+        label { cursor:pointer; }
+
+        main { margin-top:60px; }
+
+        section {
+            min-height:85vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:4rem 2rem;
+        }
+
+        .hero {
+            background: url("assets/img/hero.png") no-repeat center center !important;
+            background-size: cover;
+            position: relative;
+        }
+
+        .hero-overlay {
+            background: rgba(0,0,0,0.4); /* optional dark overlay */
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero h1, .hero p {
+            text-shadow: 0 0 10px rgba(0,0,0,0.7);
+        }
+
+        .about-objects {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
+            padding: 4rem 2rem;
+            background: #111; /* keep consistent with alternating sections */
+        }
+
+        .about-objects .content {
+            display: flex;
+            flex-wrap: wrap; /* stack on mobile */
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+            gap: 2rem;
+        }
+
+        .about-objects .text {
+            flex: 1 1 400px;
+        }
+
+        .about-objects .image {
+            flex: 1 1 400px;
+            text-align: right;
+        }
+
+        .about-objects .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /* optional */
+        }
+
+        .buttons { margin-top:1.5rem; display:flex; gap:16px; }
+        .buttons a img {
+            height:40px;
+            transition: all 0.3s ease;
+        }
+        .buttons a img:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <span>Patchform</span>
+    <label for="menu-toggle">☰</label>
+</header>
+<input type="checkbox" id="menu-toggle" hidden>
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="https://discord.gg/FgMyB9KU9H">Discord</a>
+</nav>
+
+<main>
+    {{ content }}
+</main>
+</body>
+</html>
