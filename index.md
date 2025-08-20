@@ -32,5 +32,5 @@ title: Patchform
 
 <section id="features">
   <h2>Launching 2026</h2>
-  <p>Patchform is currently in heavy developement, join my Patreon, or Discord channel for updates and early releases!…</p>
+  <p>Patchform is currently in heavy development, join my Patreon, or Discord channel for updates and early releases!…</p>
 </section>
