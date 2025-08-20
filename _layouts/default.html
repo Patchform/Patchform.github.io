@@ -63,16 +63,23 @@
         }
 
         .hero {
-            background: url("assets/img/hero.png") no-repeat center center !important;
-            background-size: cover;
             position: relative;
+            text-align: center;
+            padding: 2rem 1rem;
         }
 
-        .hero-overlay {
-            background: rgba(0,0,0,0.4); /* optional dark overlay */
-            padding: 4rem 2rem;
-            text-align: center;
+        .hero-text {
+            margin-bottom: 1.5rem;
         }
+
+        .hero-img {
+            display: block;
+            max-width: 1072px;   /* natural width */
+            width: 100%;         /* shrink when smaller */
+            height: auto;        /* keep aspect ratio */
+            margin: 0 auto;      /* center horizontally */
+        }
+
         .hero h1, .hero p {
             text-shadow: 0 0 10px rgba(0,0,0,0.7);
         }

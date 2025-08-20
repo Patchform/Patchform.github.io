@@ -4,9 +4,9 @@ title: Patchform
 ---
 
 <section class="hero">
-  <div class="hero-overlay">
+  <div class="hero-text">
     <h1>Patchform</h1>
-    <p>Next-gen modular audio/visual environment</p>
+    <p>Modular audio plugin creation environment</p>
     <div class="buttons">
       <a href="https://discord.gg/FgMyB9KU9H">
         <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
@@ -16,6 +16,7 @@ title: Patchform
       </a>
     </div>
   </div>
+    <img src="assets/img/hero.png" alt="Hero" class="hero-img">
 </section>
 
 <section class="about-objects">
