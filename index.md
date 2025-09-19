@@ -7,14 +7,6 @@ title: Patchform
   <div class="hero-text">
     <h1>Patchform</h1>
     <p>Modular audio plugin creation environment</p>
-    <div class="buttons">
-      <a href="https://discord.gg/FgMyB9KU9H">
-        <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
-      </a>
-      <a href="https://www.patreon.com/alexmitchellmus">
-        <img src="https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white">
-      </a>
-    </div>
   </div>
     <img src="assets/img/hero.png" alt="Hero" class="hero-img">
 </section>
@@ -32,5 +24,10 @@ title: Patchform
 
 <section id="features">
   <h2>Launching 2026</h2>
-  <p>Patchform is currently in heavy development, join my Patreon, or Discord channel for updates and early releases!…</p>
+  <p>Patchform is currently in heavy development. Join my Patreon for updates and early release</p>
+  <div class="buttons" style="text-align: center;">
+    <a href="https://www.patreon.com/alexmitchellmus">
+        <img src="https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white">
+    </a>
+  </div>
 </section>
